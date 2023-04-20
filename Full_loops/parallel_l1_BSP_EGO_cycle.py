@@ -1265,9 +1265,9 @@ def par_l11_BSP_EGO_run(DB, n_cycle, t_max, batch_size, tree_depth, n_learn, id_
     
                 # 5. Get number of candidates to compute
                 n_cand = np.zeros(n_proc, dtype = 'i')
-                #print('I am worker ', my_rank, 'and I wait for the number of candidates I have to compute. ')
+                print('I am worker ', my_rank, 'and I wait for the number of candidates I have to compute. ')
                 comm.Bcast(n_cand, root = 0)
-                #print('I am worker ', my_rank, 'and I have ', n_cand[my_rank], ' to compute')
+                print('I am worker ', my_rank, 'and I have ', n_cand[my_rank], ' to compute')
             
                 ## Receive from master 
                 cand = []
