@@ -1601,3 +1601,6 @@ def par_l11_BSP_EGO_run(DB, n_cycle, t_max, batch_size, tree_depth, n_learn, id_
 #                 break
                 
 #         return None        
+
+def test():
+    print('Precedent function commented, new func in test branch only')
