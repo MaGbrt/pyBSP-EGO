@@ -1601,3 +1601,8 @@ def par_l2_BSP_EGO_run(DB, n_cycle, t_max, batch_size, tree_depth, n_learn, id_r
                 break
                 
         return None        
+
+
+def new_func():
+    print('nothing, im in the main branch only')
+    
